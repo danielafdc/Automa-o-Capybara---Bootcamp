@@ -56,12 +56,10 @@ class TarefasPage
 
     def editar_tarefa(nome)
         buscar_tr(nome).find('#edit-button').click
-        sleep 3
     end
 
     def finalizar_tarefa
         within('#edit-task') do
-            sleep 3
              done_field = find(".pretty", text: "Finalizada")
              done_field.click
             click_button 'Atualizar'

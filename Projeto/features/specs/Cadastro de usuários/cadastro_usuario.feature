@@ -9,7 +9,7 @@ Funcionalidade: Cadastro de usuário
         Dado que eu acesso a página de cadastro
 
     Cenário: Cadastro com sucesso
-        Quando faço meu cadastro com meu "nome", "email" e "senha"
+        Quando faço meu cadastro com meu nome, email e senha
         Então meu perfil é criado com sucesso
 
     Esquema do Cenário: Tentativa de cadastro do usuário

@@ -13,10 +13,9 @@ Dado("que eu acesso a página de cadastro") do
     expect(@cadastro_usuario_page.mensagem_alerta_cadastro).to have_content mensagem_alerta
   end
   
-  Quando("faço meu cadastro com meu {string}, {string} e {string}") do |nome, email, senha|
+  Quando("faço meu cadastro com meu nome, email e senha") do
     @nome = Faker::FunnyName.name
     @cadastro_usuario_page.cadastro_de_usuario(@nome, "#{Faker::Lorem.characters(number:8)}@gmail.com", "123456")
-    sleep 10
   end
   
   Então("meu perfil é criado com sucesso") do

@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/ruby,macos
 # Edit at https://www.gitignore.io/?templates=ruby,macos
 
+*.pptx
+
 ### macOS ###
 # General
 .DS_Store

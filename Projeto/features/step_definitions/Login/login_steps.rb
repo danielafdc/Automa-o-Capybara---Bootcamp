@@ -8,7 +8,6 @@ Dado("que eu acesso o sistema") do
   
   Então("vejo a mensagem de boas vindas {string}") do |mensagem_boas_vindas|
     expect(find("#task-board")).to have_content mensagem_boas_vindas
-    sleep 5
   end
   
   Então("vejo a seguinte mensagem de alerta {string}") do |mensagem_alerta|

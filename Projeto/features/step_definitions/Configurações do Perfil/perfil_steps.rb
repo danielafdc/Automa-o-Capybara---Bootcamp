@@ -9,7 +9,6 @@ Dado("que estou autenticado com {string} e {string}") do |email, senha|
   
   Quando("completo o meu cadastro com {string} e {string}") do |empresa, cargo|
     @perfil_page.completa_cadastro(empresa, cargo)
-    sleep 5
   end
   
   Então("devo ver a mensagem de atualização cadastral:") do |atualizacao_cadastral|

@@ -3790,3 +3790,122 @@ D, [2019-11-12T15:38:01.794103 #94779] DEBUG -- : MONGODB | [38] 127.0.0.1:27017
 D, [2019-11-12T15:38:01.795116 #94779] DEBUG -- : MONGODB | [38] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
 D, [2019-11-12T15:38:01.798539 #94779] DEBUG -- : MONGODB | [39] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70234711778520 type=uuid data=0xf4ccccde0bd44b83...>}]}
 D, [2019-11-12T15:38:01.799351 #94779] DEBUG -- : MONGODB | [39] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:25.247762 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:25.248698 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:25.248886 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:25.248937 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:25.248990 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:25.249024 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:25.249797 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:25.257420 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331022944100 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331023039440 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:25 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.007308>>
+D, [2019-11-17T16:09:25.257509 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:25.257652 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:25.257699 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:25.261408 #58149] DEBUG -- : MONGODB | [7] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331023033000 type=uuid data=0x1cc1b215911448c7...>}}
+D, [2019-11-17T16:09:25.263840 #58149] DEBUG -- : MONGODB | [7] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.002s
+D, [2019-11-17T16:09:25.264456 #58149] DEBUG -- : MONGODB | [8] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"Fazer Compras", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331023033000 type=uuid data=0x1cc1b215911448c7...>}}
+D, [2019-11-17T16:09:25.265862 #58149] DEBUG -- : MONGODB | [8] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:32.102364 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:32.102445 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:32.102568 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:32.102609 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:32.102650 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:32.102746 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:32.102887 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:32.109943 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331025067560 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331079623740 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:32 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.006827>>
+D, [2019-11-17T16:09:32.110032 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:32.110148 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:32.110190 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:32.114378 #58149] DEBUG -- : MONGODB | [11] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331014671120 type=uuid data=0x609f4c0e24894df9...>}}
+D, [2019-11-17T16:09:32.116712 #58149] DEBUG -- : MONGODB | [11] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.002s
+D, [2019-11-17T16:09:32.117204 #58149] DEBUG -- : MONGODB | [12] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"Ler", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331014671120 type=uuid data=0x609f4c0e24894df9...>}}
+D, [2019-11-17T16:09:32.118339 #58149] DEBUG -- : MONGODB | [12] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:33.676604 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:33.677404 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:33.677553 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:33.677599 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:33.677642 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:33.677672 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:33.677793 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:33.682080 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331080171000 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331015549940 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:33 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004055>>
+D, [2019-11-17T16:09:33.682177 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:33.682303 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:33.682346 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:33.685523 #58149] DEBUG -- : MONGODB | [15] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331015576220 type=uuid data=0x8de00d8586184f45...>}}
+D, [2019-11-17T16:09:33.687898 #58149] DEBUG -- : MONGODB | [15] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.002s
+D, [2019-11-17T16:09:33.688396 #58149] DEBUG -- : MONGODB | [16] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331015576220 type=uuid data=0x8de00d8586184f45...>}}
+D, [2019-11-17T16:09:33.689355 #58149] DEBUG -- : MONGODB | [16] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:35.154935 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:35.155047 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:35.155192 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:35.155234 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:35.155275 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:35.155303 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:35.155423 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:35.158995 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331029342180 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331033706060 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:35 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003371>>
+D, [2019-11-17T16:09:35.159071 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:35.159186 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:35.159228 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:35.162111 #58149] DEBUG -- : MONGODB | [19] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331033699880 type=uuid data=0x6a39ecc7c61a423e...>}}
+D, [2019-11-17T16:09:35.164297 #58149] DEBUG -- : MONGODB | [19] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:35.164768 #58149] DEBUG -- : MONGODB | [20] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"Ler um livro de BDD", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331033699880 type=uuid data=0x6a39ecc7c61a423e...>}}
+D, [2019-11-17T16:09:35.166219 #58149] DEBUG -- : MONGODB | [20] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:37.167777 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:37.167866 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:37.168011 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:37.168057 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:37.168105 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:37.168138 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:37.168336 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:37.173405 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331029477660 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331029426000 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:37 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004836>>
+D, [2019-11-17T16:09:37.173490 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:37.173690 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:37.173732 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:37.177132 #58149] DEBUG -- : MONGODB | [23] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331022096020 type=uuid data=0x2581b09e8f144e80...>}}
+D, [2019-11-17T16:09:37.179809 #58149] DEBUG -- : MONGODB | [23] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.002s
+D, [2019-11-17T16:09:37.180319 #58149] DEBUG -- : MONGODB | [24] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"Viagem para o Caribe", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331022096020 type=uuid data=0x2581b09e8f144e80...>}}
+D, [2019-11-17T16:09:37.181413 #58149] DEBUG -- : MONGODB | [24] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:39.109283 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:39.109363 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:39.109482 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:39.109523 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:39.109564 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:39.109593 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:39.109716 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:39.114330 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331053410480 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331053340080 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:39 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004406>>
+D, [2019-11-17T16:09:39.114410 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:39.114529 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:39.114572 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:39.118219 #58149] DEBUG -- : MONGODB | [27] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331053352260 type=uuid data=0x51afdbcad82d426b...>}}
+D, [2019-11-17T16:09:39.120520 #58149] DEBUG -- : MONGODB | [27] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.002s
+D, [2019-11-17T16:09:39.121034 #58149] DEBUG -- : MONGODB | [28] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"Tarefa indesejada", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331053352260 type=uuid data=0x51afdbcad82d426b...>}}
+D, [2019-11-17T16:09:39.122241 #58149] DEBUG -- : MONGODB | [28] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:45.774336 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+D, [2019-11-17T16:09:45.774424 #58149] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2019-11-17T16:09:45.774618 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:45.774704 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+D, [2019-11-17T16:09:45.774758 #58149] DEBUG -- : MONGODB | EVENT: #<ServerOpening address=127.0.0.1:27017 topology=Unknown[127.0.0.1:27017]>
+D, [2019-11-17T16:09:45.774793 #58149] DEBUG -- : MONGODB | Server 127.0.0.1:27017 initializing.
+D, [2019-11-17T16:09:45.774937 #58149] DEBUG -- : MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[127.0.0.1:27017] servers=[#<Server address=127.0.0.1:27017 UNKNOWN>]>
+D, [2019-11-17T16:09:45.779289 #58149] DEBUG -- : MONGODB | EVENT: #<ServerDescriptionChanged address=127.0.0.1:27017 topology=Single[127.0.0.1:27017] prev=#<Mongo::Server:Description:0x70331053467800 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70331053520340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-11-17 19:09:45 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.004152>>
+D, [2019-11-17T16:09:45.779371 #58149] DEBUG -- : MONGODB | Server description for 127.0.0.1:27017 changed from 'unknown' to 'standalone'.
+D, [2019-11-17T16:09:45.779489 #58149] DEBUG -- : MONGODB | EVENT: #<TopologyChanged prev=Unknown[127.0.0.1:27017] new=Single[127.0.0.1:27017]>
+D, [2019-11-17T16:09:45.779533 #58149] DEBUG -- : MONGODB | Topology type 'Unknown' changed to type 'Single'.
+D, [2019-11-17T16:09:45.784397 #58149] DEBUG -- : MONGODB | [31] 127.0.0.1:27017 #1 | markdb.find | STARTED | {"find"=>"users", "filter"=>{"profile.email"=>"daniela.ferreira@venturus.org.br"}, "lsid"=>{"id"=><BSON::Binary:0x70331053532520 type=uuid data=0x001614e8bd2343fa...>}}
+D, [2019-11-17T16:09:45.787097 #58149] DEBUG -- : MONGODB | [31] 127.0.0.1:27017 | markdb.find | SUCCEEDED | 0.002s
+D, [2019-11-17T16:09:45.787621 #58149] DEBUG -- : MONGODB | [32] 127.0.0.1:27017 #1 | markdb.delete | STARTED | {"delete"=>"tasks", "ordered"=>true, "deletes"=>[{"q"=>{"title"=>"Tarefa indesejada", "createdBy"=>"yYiA2pTDD8aG6v5wj"}, "limit"=>0}], "lsid"=>{"id"=><BSON::Binary:0x70331053532520 type=uuid data=0x001614e8bd2343fa...>}}
+D, [2019-11-17T16:09:45.788842 #58149] DEBUG -- : MONGODB | [32] 127.0.0.1:27017 | markdb.delete | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.323397 #58149] DEBUG -- : MONGODB | [33] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331053532520 type=uuid data=0x001614e8bd2343fa...>}]}
+D, [2019-11-17T16:09:47.324425 #58149] DEBUG -- : MONGODB | [33] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.326887 #58149] DEBUG -- : MONGODB | [34] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331053352260 type=uuid data=0x51afdbcad82d426b...>}]}
+D, [2019-11-17T16:09:47.327677 #58149] DEBUG -- : MONGODB | [34] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.330315 #58149] DEBUG -- : MONGODB | [35] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331022096020 type=uuid data=0x2581b09e8f144e80...>}]}
+D, [2019-11-17T16:09:47.331221 #58149] DEBUG -- : MONGODB | [35] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.334180 #58149] DEBUG -- : MONGODB | [36] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331033699880 type=uuid data=0x6a39ecc7c61a423e...>}]}
+D, [2019-11-17T16:09:47.334983 #58149] DEBUG -- : MONGODB | [36] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.337531 #58149] DEBUG -- : MONGODB | [37] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331015576220 type=uuid data=0x8de00d8586184f45...>}]}
+D, [2019-11-17T16:09:47.338335 #58149] DEBUG -- : MONGODB | [37] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.340806 #58149] DEBUG -- : MONGODB | [38] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331014671120 type=uuid data=0x609f4c0e24894df9...>}]}
+D, [2019-11-17T16:09:47.341544 #58149] DEBUG -- : MONGODB | [38] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s
+D, [2019-11-17T16:09:47.344078 #58149] DEBUG -- : MONGODB | [39] 127.0.0.1:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70331023033000 type=uuid data=0x1cc1b215911448c7...>}]}
+D, [2019-11-17T16:09:47.344878 #58149] DEBUG -- : MONGODB | [39] 127.0.0.1:27017 | admin.endSessions | SUCCEEDED | 0.001s

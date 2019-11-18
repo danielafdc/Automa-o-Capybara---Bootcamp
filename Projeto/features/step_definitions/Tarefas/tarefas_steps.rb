@@ -47,11 +47,9 @@ Dado("que o nome da minha tarefa é {string}") do |nome_tarefa|
   
   Quando("confirmo a ação de exclusão") do
     @tarefas_page.confirma_modal
-    sleep 5
   end
   
   Então("esta tarefa não deve mais ser exibida na lista") do
-    sleep 5
     expect(@tarefas_page.buscar_trs(@nome_tarefa)). to have_no_content @nome_tarefa
   end
   
